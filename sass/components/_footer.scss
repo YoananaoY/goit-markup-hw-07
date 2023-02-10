@@ -1,0 +1,231 @@
+.footer__mail-link {
+  font-weight: 400;
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.6);
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  text-decoration: underline;
+  margin: 0;
+}
+
+.footer__phone-link:hover {
+  text-decoration: underline;
+  text-decoration-color: #2196f3;
+  text-decoration-thickness: 3px;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.footer__mail-link:hover {
+  text-decoration: underline;
+  text-decoration-color: #2196f3;
+  text-decoration-thickness: 3px;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.footer__phone-link {
+  color: rgba(255, 255, 255, 0.6);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  text-decoration: none;
+  margin: 0;
+}
+
+.footer__street:hover {
+  text-decoration: underline;
+  text-decoration-color: #2196f3;
+  text-decoration-thickness: 3px;
+}
+
+.footer__street {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  color: #ffffff;
+  align-items: flex-start;
+}
+
+footer {
+  height: auto;
+  width: 100%;
+  background-color: #2f303a;
+}
+
+address {
+  display: flex;
+  justify-content: flex-start;
+  max-width: 1170px;
+}
+
+.footer__container-logo {
+  display: flex;
+  flex-direction: column;
+  row-gap: 15px;
+  margin-left: 0;
+  margin-right: 0;
+  margin-top: 72px;
+}
+
+.footer__street {
+  cursor: pointer;
+}
+.footer__logo-link {
+  text-decoration: none;
+  display: inline-flex;
+  font-size: 26px;
+  font-weight: 700;
+  line-height: 1.19;
+  font-family: "raleway";
+  font-style: normal;
+  margin: 0;
+}
+
+.footer__logo:hover {
+  text-decoration: underline;
+  color: #2196f3;
+  text-decoration-thickness: 3px;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.footer__heading {
+  display: flex;
+  color: white;
+  font-family: Roboto;
+  font-style: normal;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  padding-top: 10px;
+  text-transform: uppercase;
+  margin-top: 72px;
+}
+
+.footer__box {
+  padding-left: 70px;
+}
+
+.footer__heading:hover {
+  text-decoration: underline;
+  text-decoration-color: #2196f3;
+  text-decoration-thickness: 3px;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.footer__icon {
+  height: 44px;
+  width: 44px;
+  margin-top: 16px;
+  border-radius: 50px;
+  background-color: rgba(175, 177, 184, 0.3);
+  --color4: var(--color-first);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.footer__street {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.7;
+  letter-spacing: 0.03em;
+  color: #ffffff;
+}
+
+.footer__icon:hover {
+  cursor: pointer;
+  background-color: #2196f3;
+  border-radius: 50px;
+  cursor: pointer;
+  background-color: var(--color-four);
+}
+
+.footer__icon-list {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  gap: 10px;
+  padding: 0;
+}
+.footer__newsletter {
+  height: 50px;
+  width: 358px;
+  border-radius: 4px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  font-size: 12px;
+  background: rgba(47, 48, 58, 1);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  font-weight: 400;
+  font-size: 16px;
+  color: white;
+  line-height: 1.25;
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.03em;
+  padding-left: 16px;
+  margin-right: 12px;
+}
+.footer__box-newsletter {
+  display: flex;
+  font-family: Roboto;
+  font-style: normal;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  padding-top: 10px;
+  text-transform: uppercase;
+  width: 570px;
+  flex-direction: column;
+}
+.footer__heading--newsletter {
+  margin-left: 78px;
+  margin-right: 0;
+  padding: 0;
+  margin-bottom: 20px;
+}
+
+.newsletter__container {
+  display: inline-flex;
+  align-items: baseline;
+  margin-left: 78px;
+}
+
+.newsletter__box {
+  display: flex;
+  margin: 40px;
+}
+
+.icon__send {
+  margin-left: 24px;
+  padding: 0;
+}
+
+.form__button--signup {
+  margin: 0;
+  padding-left: 42px;
+  margin-top: 0;
+}
+.form__button--send {
+  margin-top: 0;
+}
+.form__button {
+  background-color: #2196f3;
+  cursor: pointer;
+  border-radius: 4px;
+  border-color: rgba(33, 33, 33, 0.2);
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.06em;
+  display: flex;
+  align-items: center;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  margin: 0px auto;
+  justify-content: center;
+  width: 200px;
+  height: 50px;
+}
