@@ -1,40 +1,35 @@
 .footer__mail-link {
   font-weight: 400;
   font-size: 14px;
-  color: rgba(255, 255, 255, 0.6);
+  color: $textFooterPlaceholder;
   line-height: 1.17;
   letter-spacing: 0.03em;
   text-decoration: underline;
   margin: 0;
-}
-
-.footer__phone-link:hover {
-  text-decoration: underline;
-  text-decoration-color: #2196f3;
-  text-decoration-thickness: 3px;
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-.footer__mail-link:hover {
-  text-decoration: underline;
-  text-decoration-color: #2196f3;
-  text-decoration-thickness: 3px;
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover,
+  &:focus {
+    text-decoration: underline;
+    text-decoration-color: $accentColor;
+    text-decoration-thickness: 3px;
+    transition: text-decoration-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
 }
 
 .footer__phone-link {
-  color: rgba(255, 255, 255, 0.6);
+  color: $textFooterPlaceholder;
   font-weight: 400;
   font-size: 14px;
   line-height: 1.17;
   letter-spacing: 0.03em;
   text-decoration: none;
   margin: 0;
-}
-
-.footer__street:hover {
-  text-decoration: underline;
-  text-decoration-color: #2196f3;
-  text-decoration-thickness: 3px;
+  &:hover,
+  &:focus {
+    text-decoration: underline;
+    text-decoration-color: $accentColor;
+    text-decoration-thickness: 3px;
+    transition: text-decoration-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
 }
 
 .footer__street {
@@ -42,14 +37,21 @@
   font-size: 14px;
   line-height: 1.17;
   letter-spacing: 0.03em;
-  color: #ffffff;
+  color: $primaryColor;
   align-items: flex-start;
+  &:hover,
+  &:focus {
+    text-decoration: underline;
+    text-decoration-color: $accentColor;
+    text-decoration-thickness: 3px;
+    transition: text-decoration-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
 }
 
 footer {
   height: auto;
   width: 100%;
-  background-color: #2f303a;
+  background-color: $footerBackground;
 }
 
 address {
@@ -76,21 +78,15 @@ address {
   font-size: 26px;
   font-weight: 700;
   line-height: 1.19;
-  font-family: "raleway";
+  font-family: $secondaryFont;
   font-style: normal;
   margin: 0;
 }
 
-.footer__logo:hover {
-  text-decoration: underline;
-  color: #2196f3;
-  text-decoration-thickness: 3px;
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
 .footer__heading {
   display: flex;
-  color: white;
-  font-family: Roboto;
+  color: $primaryColor;
+  font-family: $primaryFont;
   font-style: normal;
   font-size: 14px;
   font-weight: 700;
@@ -99,17 +95,17 @@ address {
   padding-top: 10px;
   text-transform: uppercase;
   margin-top: 72px;
+  &:hover,
+  &:focus {
+    text-decoration: underline;
+    text-decoration-color: $accentColor;
+    text-decoration-thickness: 3px;
+    transition: text-decoration-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
 }
 
 .footer__box {
   padding-left: 70px;
-}
-
-.footer__heading:hover {
-  text-decoration: underline;
-  text-decoration-color: #2196f3;
-  text-decoration-thickness: 3px;
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer__icon {
@@ -117,12 +113,18 @@ address {
   width: 44px;
   margin-top: 16px;
   border-radius: 50px;
-  background-color: rgba(175, 177, 184, 0.3);
-  --color4: var(--color-first);
+  background-color: $borderColor;
+  fill: $primaryColor;
   display: flex;
   align-items: center;
   justify-content: center;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover,
+  &:focus {
+    cursor: pointer;
+    background-color: $accentColor;
+    border-radius: 50px;
+  }
 }
 
 .footer__street {
@@ -130,15 +132,7 @@ address {
   font-size: 14px;
   line-height: 1.7;
   letter-spacing: 0.03em;
-  color: #ffffff;
-}
-
-.footer__icon:hover {
-  cursor: pointer;
-  background-color: #2196f3;
-  border-radius: 50px;
-  cursor: pointer;
-  background-color: var(--color-four);
+  color: $primaryColor;
 }
 
 .footer__icon-list {
@@ -152,13 +146,13 @@ address {
   height: 50px;
   width: 358px;
   border-radius: 4px;
-  border: 1px solid rgba(255, 255, 255, 0.3);
+  border: 1px solid $borderColor;
   font-size: 12px;
-  background: rgba(47, 48, 58, 1);
+  background: $footerBackground;
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   font-weight: 400;
   font-size: 16px;
-  color: white;
+  color: $primaryColor;
   line-height: 1.25;
   display: flex;
   align-items: center;
@@ -168,7 +162,7 @@ address {
 }
 .footer__box-newsletter {
   display: flex;
-  font-family: Roboto;
+  font-family: $primaryFont;
   font-style: normal;
   font-size: 14px;
   font-weight: 700;
@@ -198,6 +192,7 @@ address {
 }
 
 .icon__send {
+  fill: $primaryColor;
   margin-left: 24px;
   padding: 0;
 }
@@ -211,11 +206,11 @@ address {
   margin-top: 0;
 }
 .form__button {
-  background-color: #2196f3;
+  background-color: $accentColor;
   cursor: pointer;
   border-radius: 4px;
   border-color: rgba(33, 33, 33, 0.2);
-  color: #ffffff;
+  color: $primaryColor;
   text-decoration: none;
   font-weight: 700;
   font-size: 16px;

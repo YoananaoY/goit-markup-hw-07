@@ -1,7 +1,27 @@
-:root {
-    --color-first: #ffffff; /*color for tag h1 and text in button in header*/
-    --color-second: #212121; /*color for section headers*/
-    --color-third: #757575; /*color for tag p in other sections in files index and portfolio*/
-    --color-four: #2196f3; /*color for span logo and hover*/
-    --color-border: rgba(175, 177, 184, 0.3); /* color for borders */
-  }
+/* colors */
+$primaryColor: #ffffff;
+$secondaryColor: #212121;
+
+$accentColor: #2196f3;
+
+$borderColor: rgba(175, 177, 184, 0.3);
+$primaryBorderColor: rgba(255, 255, 255, 0.3);
+$secondaryBorderColor: #eeeeee;
+
+$textFooterPlaceholder: rgba(255, 255, 255, 0.6);
+
+$gradientOverlay: rgba(47, 48, 58, 0.4);
+
+$primaryShadowColor: rgba(0, 0, 0, 0.25);
+$secondaryShadowColor: #0000001f;
+$thirdShadowColor: #00000029;
+
+$footerBackground: #2f303a;
+$bgTeamColor: #f5f4fa;
+$backdropColor: rgba(0, 0, 0, 0.8);
+$textColor: #757575;
+$bgJobColor: rgba(47, 48, 58, 0.8);
+$iconColor: #afb1bb;
+/* fonts */
+$primaryFont: "Roboto", sans-serif;
+$secondaryFont: "Raleway", sans-serif;
